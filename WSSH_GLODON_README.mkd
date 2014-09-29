@@ -1,0 +1,47 @@
+Further Development
+===================
+
+wssh is a SSh to WebSockets Bridge that lets you invoke a remote shell using nothing but HTTP. For glodon cloud, Glodon IASS Team made secondary development.
+
+
+
+Modified Information
+--------------------
+
+- Author		: Glodon QoS Team
+- Data		: 2014-08-15
+- Modified content	: template/index.html    static/style.css
+
+
+
+Setup wsshd
+-----------
+
+> 1. python setup.py bdist
+> 2. python setup.py install
+
+
+
+The Installation Path In ubuntu
+-------------------------------
+
+>/usr/local/lib/python2.7/dist-packages/wssh-0.1.0-py2.7.egg/
+
+
+
+Usage
+-----
+
+Even though 'wssh' primary purpose is to be used as a library in your application,
+it ships with two command line tools: 'wsshd' (the server) and 'wssh' (the client).
+
+```
+tracy$ubuntu:    wsshd/0.1.0 running on 0.0.0.0:5000
+```
+
+```
+tracy$ubuntu:    wssh root@localhost -p
+Password:
+Last login: Mon Jul 23 23:20:27 2014 from localhost
+tracy$ubuntu:
+```
